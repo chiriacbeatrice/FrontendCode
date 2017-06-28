@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shopping</title>
+</head>
+<body>
+<div ng-app="hrApp">
+    <div ng-controller="Poze">
+        <li ng-repeat="pic in pictures"><img ng-src="{{pic.url}}">{{pic.label}} <div class="jumbotron" ng-hide="descriptionShow">
+            <h1>{{title}}</h1>
+            <p class="lead">
+                A simple demo application.
+            </p>
+            <p class="lead">
+                In this application we will use AngularJS framework.
+            </p>
+        </div></li>
+
+    </div>
+</div>
+
+<script type="text/javascript" src="bower_components/jquery/jquery.js"></script>
+<script type="text/javascript" src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script type="text/javascript" src="bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="hrApp.js"></script>
+<script type="text/javascript" src="Menucontroller.js"></script>
+<script type="text/javascript" src="ShowPrice.js"></script>
+<script type="text/javascript" src="Poze.js"></script>
+</body>
+</html>
