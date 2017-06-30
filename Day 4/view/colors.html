@@ -1,0 +1,13 @@
+<p>Selectati campul text:</p>
+<div ng-controller="ColorsController">
+<select ng-model="myColor" ng-options="color.text for color in colors"></select>
+    <select ng-model="myColor1" ng-options="color.text group by color.type for color in colors" ng-change="changeColor()">
+    </select>
+    <p>type is:{{col}}</p>
+    <!--<div class="form-group" ng-class="{ 'Some text': col1}">-->
+    <span ng-class="col1">Some text</span>
+
+
+
+
+</div>
